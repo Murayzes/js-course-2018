@@ -19,33 +19,34 @@
   background-size: cover;
   background-color: rgba(0, 0, 0,.7);
   background-blend-mode: darken;
-  width: 1024px;
-  height: 480px
+  min-height: 480px;
 }
 
-.logo {
-  margin: 32px 0 0 80px;
-  display: inline-block;
+.dreams-heading {
+  padding: 30px 36px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.sidebar-block {
-  margin-top: 30px;
-  float: right;
+.site-bar {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu {
-  float: left;
   list-style-type: none;
-  margin-right: 35px;
 }
 
 .menu-item {
   color: #FFF;
   font-family: "Montserrat" sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 15px;
 }
 
 .menu-item:hover {
@@ -143,7 +144,7 @@
 .service-text {
   padding: 0 25px;
   margin-bottom: 101px;
-  font-size: 10.5px;
+  font-size: 10px;
   color: #888;
   font-weight: 400;
   letter-spacing: -.26px;
@@ -152,16 +153,7 @@
 .expertise-block {
   min-height: 462px;
   background-color: #F7F7F7;
-}
-
-.expertise-right-block {
-  float: right;
-  width: 30.8%;
-}
-
-.expertise-left-block {
-  float: left;
-  width: 69.2%;
+  display: flex;
 }
 
 .expertise-title-section {
@@ -178,11 +170,9 @@
 }
 
 .expertise-main {
-  padding-right: 50px;
   color: #777;
   font-size: 12px;
   letter-spacing: -.3px;
-  margin-bottom: 15px;
 }
 
 .expertise-menu-section {
@@ -191,17 +181,15 @@
 }
 
 .expertise-menu-block {
-  width: 34.6%;
+  width: 34%;
   display: flex;
 }
 
 .expertise-menu-icon {
-  float: left;
   padding: 10px 5px 0 0;
 }
 
 .expertise-menu-content {
-  float: right;
   display: flex;
   flex-direction: column;
 }
@@ -209,22 +197,22 @@
 .expertise-menu-title {
   font-family: "Montserrat",  sans-serif;
   text-transform: uppercase;
-  font-size: 10.5px;
+  font-size: 10px;
   color: #222;
   letter-spacing: -.26;
 }
 
 .expertise-menu-main {
-  font-size: 10.5px;
+  font-size: 10px;
   color: #777;
-  line-height: 16.5px;
+  line-height: 17px;
   overflow: hidden;
   letter-spacing: -.26px;
 }
 
 
 .expertise-button {
-  width: 18.7%;
+  width: 18%;
   text-align: center;
   border-radius: 50px;
   background-color: #35C2F8;
@@ -245,20 +233,30 @@
   letter-spacing: -.26px;
 }
 
+.amazing-block {
+  display: flex;
+  padding: 30px 0;
+}
+
 .amazing-right-image {
-  float: right;
+  width: 100%;
   overflow: hidden;
-  width: 50%;
+  align-self: center;
 }
 
 .amazing-left-block {
   background-image: url("images/Background_-_Users-Icon.png");
   background-repeat: no-repeat;
-  background-position: 40px 100px;
+  background-position: center;
+  background-position-y: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .amazing-title-section {
-  padding: 0 50px;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
 }
 
 .amazing-title {
@@ -270,11 +268,10 @@
   letter-spacing: -1.5px;
 }
 
-.amazing-main-item {
-  width: 45%;
-  font-size: 10.5px;
+.amazing-main {
+  font-size: 10px;
   color: #777;
-  line-height: 16.5px;
+  line-height: 17px;
   overflow: hidden;
   letter-spacing: -.26px;
 }
@@ -284,32 +281,39 @@
   flex-direction: column;
 }
 
-.amazing-menu-icon {
-  float: left;
-  padding: 5px 5px 0 0;
+.amazing-menu-block {
+  display: flex;
 }
 
-.amazing-menu-content {
-  display: flex;
-  flex-direction: column;
+.amazing-menu-icon {
+  padding-right: 5px;
+  padding-top: 10px;
 }
 
 .amazing-menu-title {
-  margin: 0;
   font-family: "Montserrat",  sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   color: #222;
-  line-height: 16.5px;
+  line-height: 17px;
   letter-spacing: -.26px;
 }
 
 .amazing-menu-main {
-  margin-top: 9.8px;
   color: #777;
   font-family: "Noto Sans", sans-serif;
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 16.5px;
+  line-height: 17px;
   letter-spacing: -.26px;
 }
+
+.images-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-block-top, .images-block-bottom {
+  display: flex;
+}
+
